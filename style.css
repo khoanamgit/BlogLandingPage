@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    /* border: none; */
+}
+
+:root{
+    --black-color: #000;
+    --white-color: #fff;
+
+}
+
+html,body{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+}
+
+/* .col-4,.col-8{
+    padding: 0;
+} */
+
+/* .col-4{
+    padding: 0;
+} */
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-lists{
+    display: flex;
+}
+
+.nav-search{
+    line-height: 40px;
+
+}
+
+.nav-item{
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    background-color: #ccc;
+}
+
+.nav-link:hover{
+    color: var(--black-color);
+}
+
+.nav-search:hover   {
+    background-color: #ccc;
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+.header-title{
+    font-size: 48px;
+}
+
+.header-desc{
+    font-size: 16px;
+}
+
+.hero{
+    position: relative;
+
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+
+.hero-name{
+    font-size: 36px;
+    margin: 10px 0;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.hero-title{
+    font-size: 64px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.btn{
+    color: var(--black-color);
+    cursor: pointer;
+    border-radius: 0;
+}
+
+/* blog */
+
+
+.blog-title{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+.blog-desc{
+    margin: 10px 0;
+    font-size: 18px;
+    color: var(--black-color);
+}
+
+.blog-desc span{
+    opacity: 0.6;
+}
+
+.blog-img{
+    width: 100%;
+}
+
+.blog-text{
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 400;
+    color: var(--black-color);
+    line-height: 1.5;
+}
+
+.blog-btn{
+
+}
+
+.btn-like{
+    color: var(--black-color);
+    align-items: center;
+    background-color: var(--white-color);
+    border: 1px solid #ccc;
+}
+
+.btn-like:hover{
+    background-color: #ccc;
+    opacity: 1;
+}
+
+.btn-replise{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    /* padding: 8px 15px; */
+    border: none;
+}
+
+.btn-replise span{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    /* width: 25px; */
+    font-size: 15px;
+}
+
+.btn-replise:hover{
+    background-color: #ccc;
+    color: var(--black-color);
+}
+
+/*AUthor  */
+/* .author{
+    display: flex;
+
+} */
+
+.author-name{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.author-name span{
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.author-desc{
+    font-size: 15px;
+}
+
+/* About Card */
+.about-card{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.about-card-img{
+    width: 100%;
+}
+
+.about-card-name{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about-card-desc{
+    font-size: 15px;
+    font-weight: 300;
+    /* margin: 15px 0; */
+}
+
+/* Post */
+.popular-post{
+    margin: 32px 0;
+}
+
+.popular-header{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 20px;
+}
+
+.post-item{
+    background-color: var(--white-color);
+}
+
+.post-info{
+    
+}
+
+.post-img{
+    /* width: 100%; */
+    width: 50px;
+    margin-right: 12px;
+    /* height: 50px ; */
+}
+
+.post-name{
+    font-size: 18px;
+}
+
+.post-desc{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.post-item:nth-child(2),
+.post-item:nth-child(3),
+.post-item:first-child{
+    border-bottom: 1px solid #ccc;
+}
+
+.post-item:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* Advertise */
+.advertise-content{
+    background-color: var(--white-color);
+}
+
+/* .advertise-item{
+    background-color: var(--white-color);
+} */
+
+.advertise-desc{
+    height: 200px;
+    /* text-align: center; */
+    background-color: #f1f1f1;
+}
+
+.advertise-desc{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* vertical-align: middle; */
+    line-height: 200px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.advertise{
+    margin: 32px 0;
+}
+
+/* Tags */
+
+.tag{
+    margin: 32px 0;
+}
+
+.tag-content{
+    background-color: var(--white-color);
+    /* height: 200px; */
+    padding: 0 16px;
+}
+
+.tag-item{
+    background-color: #f1f1f1;
+    color: var(--black-color);
+    padding: 0 8px; 
+    margin-bottom: 16px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.tag-list{
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 16px 0;
+}
+
+/* Inspiration */
+.inspiration{
+    margin: 32px 0;
+}
+
+.inspiration-img{
+    width: 100%;
+}
+
+.inspiration-content{
+    background-color: var(--white-color);
+}
+
+/* Social */
+.social-list{
+    background-color: var(--white-color);
+    
+}
+
+.social-icon{
+    width: 21px;
+}
+
+.social-icon:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.social{
+    margin: 32px 0;
+}
+
+/* Social */
+.subcribe-content{
+    background-color: var(--white-color);
+}
+
+.subcribe-header{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.btn-subcribe{
+    width: 100%;
+}
+
+/* footer */
+footer{
+    padding: 32px;
+    background-color: #616161;
+}
+
+.btn-top{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 12px 24px;
+}
+
+.btn-top:hover{
+    background-color: #ccc;
+    color: var(--black-color);
+    cursor: pointer;
+    outline: none;
+}
+
+.icon-footer{
+    width: 18px;
+}
+
+/* Test */
+
+
+.dsNone{
+    display: none;
+}
+
+.liked{
+    color: #57BA6E;
+}
+
+/* Tablet */
+@media only screen and (min-width: 769px) and (max-width: 1100px){
+    .sidebar{
+        padding: 0 28px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 768px){
+
+    .sidebar{
+        padding: 0 27px;
+    }
+
+    .hero-title{
+        font-size: 38px;
+    }
+
+    .author-img{
+        width: 30%;
+    }
+}
