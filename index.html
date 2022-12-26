@@ -12,6 +12,8 @@
     <!-- <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Link JS BOotraps -->
+
     <link rel="stylesheet" href="./style.css">
     <title>Landing Page 3</title>
 </head>
@@ -71,7 +73,30 @@
         <div class="hero-content py-3 px-4">
             <h2 class="hero-name text-light">Jane's</h2>
             <p class="hero-title text-light">FASHION BLOG</p>
-            <button class="btn btn-secondary my-2">SUBCRIBE</button>
+            <button class="btn btn-secondary my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">SUBCRIBE</button>
+        </div>       
+    </div>
+
+     <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">SUBSCRIBE</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                <form action="">
+                    <input class="my-3 form-control" type="email" placeholder="Enter e-mail" required>
+                    <button class="btn btn-danger btn-subcribe">Subcribe</button>
+                </form>
+            </div>
+            <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
         </div>
     </div>
 
@@ -479,5 +504,6 @@
         <p class="my-3">Powered by <a target="_blank" href="https://www.facebook.com/khoanam0427" class="text-light">Vo Khoa Nam</a></p>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="./index.js"></script>
 </html>
